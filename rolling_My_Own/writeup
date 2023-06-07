@@ -1,0 +1,16 @@
+* problem when running the exec
+ 
+cd 
+mkdir build
+cd build
+curl -OL https://www.openssl.org/source/openssl-1.1.1u.tar.gz
+tar xfv openssl-1.1.1u.tar.gz
+cd openssl-1.1.1u
+cd ~ && mdkir .local
+./configure --prefix=/home/kali/.local
+
+./config --prefix=/home/kali/.local
+
+export LD_LIBRARY_PATH=/home/kali/.local/lib/
+
+
